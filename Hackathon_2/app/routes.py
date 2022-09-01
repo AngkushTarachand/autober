@@ -7,6 +7,6 @@ def index():
     return "Hackathon2"
 
 
-@flask_app.route("/sign_in")
+@flask_app.route("/homepage")
 def sign_in():
-    return "WIP"
+    return flask.render_template("dashboard.html")
