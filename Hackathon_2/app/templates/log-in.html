@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Log in</title>
-    <link rel="stylesheet" href="log-in.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='log-in.css')}}">
 </head>
 <body>
 
@@ -18,13 +18,13 @@
             <ul>
 
             <li class="list active">
-                <a href="#">
+                <a href={{ url_for('index_homepage') }}>
                     <span class="icon"><i class="fa-solid fa-house"></i></span>
                     <span class="title">Home</span>
                 </a>
             </li>
             <li class="list">
-                <a href={{ url_for('profile')}}>
+                <a href="#">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
                     <span class="title">Profile</span>
                 </a>

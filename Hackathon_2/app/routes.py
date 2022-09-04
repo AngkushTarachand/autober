@@ -23,6 +23,6 @@ def leaderboard_page():
     return flask.render_template("leaderboard.html")
 
 
-@flask_app.route("/log-in")
-def log_in():
+@flask_app.route("/login")
+def log_in_page():
     return flask.render_template("log-in.html")
