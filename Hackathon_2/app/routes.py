@@ -8,5 +8,10 @@ def index():
 
 
 @flask_app.route("/homepage")
-def sign_in():
+def index_homepage():
+    return flask.render_template("base.html")
+
+
+@flask_app.route("/profile")
+def profile_page():
     return flask.render_template("dashboard.html")
